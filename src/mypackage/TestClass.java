@@ -18,5 +18,13 @@ public class TestClass {
         System.out.println("Cat color is: " + cat.color);
         System.out.println("Dog color is: " + dog.color);
         dog.sleep();
+        dog.var = 10;
+
+        System.out.println(dog.getWeight());
+        dog.setWeight(10);
+        System.out.println(dog.getWeight());
+
+        dog.sound();
+        cat.sound();
     }
 }
