@@ -5,6 +5,7 @@ public class Animal {
     String color;
     public int var;
 
+
     public void walk(String place) {
         System.out.println("We are walking here: " + place);
         var = 10;

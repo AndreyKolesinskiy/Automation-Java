@@ -3,19 +3,20 @@ package mypackage;
 public class TestClass {
     public static void main (String[] args) {
 
-        Cat cat = new Cat();
+        Cat catObject = new Cat();
         Dog dog =  new Dog();
+        Car car = new Car();
 
-        cat.color = "White";
+        catObject.color = "White";
         dog.color = "Black";
 
-        cat.walk("Backyard");
+        catObject.walk("Backyard");
         dog.walk("Park");
 
-        cat.feed("Milk");
+        catObject.feed("Milk");
         dog.sit();
 
-        System.out.println("Cat color is: " + cat.color);
+        System.out.println("Cat color is: " + catObject.color);
         System.out.println("Dog color is: " + dog.color);
         dog.sleep();
         dog.var = 10;
@@ -25,6 +26,9 @@ public class TestClass {
         System.out.println(dog.getWeight());
 
         dog.sound();
-        cat.sound();
+        catObject.sound();
+
+        car.ride();
+        car.stop();
     }
 }
